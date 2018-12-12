@@ -12,6 +12,7 @@
 		B9E9B8CF21C16F4A00E81800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9E9B8CD21C16F4A00E81800 /* Main.storyboard */; };
 		B9E9B8D121C16F5700E81800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9E9B8D021C16F5700E81800 /* Assets.xcassets */; };
 		B9E9B8D421C16F5700E81800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9E9B8D221C16F5700E81800 /* LaunchScreen.storyboard */; };
+		B9E9B8DF21C1700700E81800 /* InternetDefinitions.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B9E9B8DE21C1700700E81800 /* InternetDefinitions.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B9E9B8D021C16F5700E81800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9E9B8D321C16F5700E81800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9E9B8D521C16F5700E81800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9E9B8DE21C1700700E81800 /* InternetDefinitions.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = InternetDefinitions.pdf; path = ../../../../../Downloads/InternetDefinitions.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		B9E9B8C821C16F4A00E81800 /* InternetApp */ = {
 			isa = PBXGroup;
 			children = (
-				B9E9B8C921C16F4A00E81800 /* AppDelegate.swift */,
-				B9E9B8CB21C16F4A00E81800 /* ViewController.swift */,
-				B9E9B8CD21C16F4A00E81800 /* Main.storyboard */,
-				B9E9B8D021C16F5700E81800 /* Assets.xcassets */,
-				B9E9B8D221C16F5700E81800 /* LaunchScreen.storyboard */,
-				B9E9B8D521C16F5700E81800 /* Info.plist */,
+				B9E9B8DB21C16F6E00E81800 /* Resources */,
+				B9E9B8DC21C16F7700E81800 /* Controller */,
+				B9E9B8DD21C16F8500E81800 /* View */,
 			);
 			path = InternetApp;
+			sourceTree = "<group>";
+		};
+		B9E9B8DB21C16F6E00E81800 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9E9B8C921C16F4A00E81800 /* AppDelegate.swift */,
+				B9E9B8D021C16F5700E81800 /* Assets.xcassets */,
+				B9E9B8D521C16F5700E81800 /* Info.plist */,
+				B9E9B8DE21C1700700E81800 /* InternetDefinitions.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B9E9B8DC21C16F7700E81800 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B9E9B8CB21C16F4A00E81800 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B9E9B8DD21C16F8500E81800 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9E9B8CD21C16F4A00E81800 /* Main.storyboard */,
+				B9E9B8D221C16F5700E81800 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +152,7 @@
 				B9E9B8D421C16F5700E81800 /* LaunchScreen.storyboard in Resources */,
 				B9E9B8D121C16F5700E81800 /* Assets.xcassets in Resources */,
 				B9E9B8CF21C16F4A00E81800 /* Main.storyboard in Resources */,
+				B9E9B8DF21C1700700E81800 /* InternetDefinitions.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7UKS56S33P;
-				INFOPLIST_FILE = InternetApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InternetApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7UKS56S33P;
-				INFOPLIST_FILE = InternetApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InternetApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
