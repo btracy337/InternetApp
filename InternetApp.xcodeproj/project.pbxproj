@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B943951A21C4059B00E9ADE3 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B943951921C4059B00E9ADE3 /* InternetDetailViewController.swift */; };
+		B943951C21C40BE300E9ADE3 /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B943951B21C40BE300E9ADE3 /* InternetMasterViewController.swift */; };
 		B9E9B8CA21C16F4A00E81800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9B8C921C16F4A00E81800 /* AppDelegate.swift */; };
 		B9E9B8CC21C16F4A00E81800 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E9B8CB21C16F4A00E81800 /* ViewController.swift */; };
 		B9E9B8CF21C16F4A00E81800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9E9B8CD21C16F4A00E81800 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B943951921C4059B00E9ADE3 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
+		B943951B21C40BE300E9ADE3 /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		B9E9B8C621C16F4A00E81800 /* InternetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9E9B8C921C16F4A00E81800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9E9B8CB21C16F4A00E81800 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				B9E9B8CB21C16F4A00E81800 /* ViewController.swift */,
+				B943951921C4059B00E9ADE3 /* InternetDetailViewController.swift */,
+				B943951B21C40BE300E9ADE3 /* InternetMasterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,6 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9E9B8CC21C16F4A00E81800 /* ViewController.swift in Sources */,
+				B943951C21C40BE300E9ADE3 /* InternetMasterViewController.swift in Sources */,
+				B943951A21C4059B00E9ADE3 /* InternetDetailViewController.swift in Sources */,
 				B9E9B8CA21C16F4A00E81800 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
