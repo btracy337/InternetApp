@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S0e-ZY-27J">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,17 +9,47 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Internet Detail View Controller-->
         <scene sceneID="SNp-9O-GMo">
             <objects>
-                <viewController id="Ycf-Kc-6ZP" sceneMemberID="viewController">
+                <viewController id="Ycf-Kc-6ZP" customClass="InternetDetailViewController" customModule="InternetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mvj-dp-MkI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppK-ky-b1h">
+                                <rect key="frame" x="166" y="102" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <wkWebView contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="19t-yl-aga">
+                                <rect key="frame" x="0.0" y="507" width="375" height="128"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="XaB-WI-2d6"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ppK-ky-b1h" firstAttribute="leading" secondItem="FsU-hg-aF3" secondAttribute="leading" constant="166" id="0uU-TU-8nn"/>
+                            <constraint firstItem="ppK-ky-b1h" firstAttribute="top" secondItem="FsU-hg-aF3" secondAttribute="top" constant="38" id="Mkm-Ew-kqH"/>
+                            <constraint firstItem="ppK-ky-b1h" firstAttribute="centerX" secondItem="19t-yl-aga" secondAttribute="centerX" id="Uez-nr-ahq"/>
+                            <constraint firstItem="19t-yl-aga" firstAttribute="width" secondItem="FsU-hg-aF3" secondAttribute="width" id="xg7-CA-Cib"/>
+                            <constraint firstItem="FsU-hg-aF3" firstAttribute="bottom" secondItem="19t-yl-aga" secondAttribute="bottom" constant="62" id="z5B-GT-UNR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FsU-hg-aF3"/>
                     </view>
                     <navigationItem key="navigationItem" id="Myq-uU-4RO"/>
+                    <connections>
+                        <outlet property="screenTitle" destination="ppK-ky-b1h" id="Kn9-sZ-Gc0"/>
+                        <outlet property="webViewer" destination="19t-yl-aga" id="cZM-dA-HYl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ye-UI-f7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -28,7 +58,7 @@
         <!--Root View Controller-->
         <scene sceneID="trQ-Dh-3nL">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="hVG-EI-6Oo" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="hVG-EI-6Oo" customClass="InternetMasterViewController" customModule="InternetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Yw-2X-GHE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
