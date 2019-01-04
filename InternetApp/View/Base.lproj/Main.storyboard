@@ -18,16 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppK-ky-b1h">
-                                <rect key="frame" x="166" y="102" width="42" height="21"/>
+                                <rect key="frame" x="0.0" y="102" width="375" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <wkWebView contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="19t-yl-aga">
+                            <wkWebView contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="19t-yl-aga">
                                 <rect key="frame" x="0.0" y="507" width="375" height="128"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="XaB-WI-2d6"/>
+                                    <constraint firstAttribute="height" constant="128" id="UhP-rn-tC2"/>
                                 </constraints>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -37,11 +37,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ppK-ky-b1h" firstAttribute="leading" secondItem="FsU-hg-aF3" secondAttribute="leading" constant="166" id="0uU-TU-8nn"/>
-                            <constraint firstItem="ppK-ky-b1h" firstAttribute="top" secondItem="FsU-hg-aF3" secondAttribute="top" constant="38" id="Mkm-Ew-kqH"/>
-                            <constraint firstItem="ppK-ky-b1h" firstAttribute="centerX" secondItem="19t-yl-aga" secondAttribute="centerX" id="Uez-nr-ahq"/>
-                            <constraint firstItem="19t-yl-aga" firstAttribute="width" secondItem="FsU-hg-aF3" secondAttribute="width" id="xg7-CA-Cib"/>
-                            <constraint firstItem="FsU-hg-aF3" firstAttribute="bottom" secondItem="19t-yl-aga" secondAttribute="bottom" constant="62" id="z5B-GT-UNR"/>
+                            <constraint firstItem="19t-yl-aga" firstAttribute="width" secondItem="ppK-ky-b1h" secondAttribute="width" id="3pX-7o-rmg"/>
+                            <constraint firstItem="ppK-ky-b1h" firstAttribute="top" secondItem="FsU-hg-aF3" secondAttribute="top" constant="38" id="8ri-Zf-vVj"/>
+                            <constraint firstAttribute="trailing" secondItem="19t-yl-aga" secondAttribute="trailing" id="Gbh-nw-hU1"/>
+                            <constraint firstItem="19t-yl-aga" firstAttribute="leading" secondItem="Mvj-dp-MkI" secondAttribute="leading" id="Tax-NX-Bsy"/>
+                            <constraint firstItem="ppK-ky-b1h" firstAttribute="centerX" secondItem="19t-yl-aga" secondAttribute="centerX" id="kof-XG-kaW"/>
+                            <constraint firstItem="FsU-hg-aF3" firstAttribute="bottom" secondItem="19t-yl-aga" secondAttribute="bottom" constant="32" id="uu4-vB-jha"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FsU-hg-aF3"/>
                     </view>
@@ -64,7 +65,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cxn-tt-A5f">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="cxn-tt-A5f">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cxn-tt-A5f" id="Ibr-TE-F55">

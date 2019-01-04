@@ -23,6 +23,7 @@ public class InternetMasterViewController: UITableViewController {
         "Social Media"
         ]
         addresses = [
+        "https://www.cnn.com",
         "https://www.google.com",
         "https://apcentral.collegeboard.org/courses/ap-computer-science-principles/",
         "https://www.reddit.com",
